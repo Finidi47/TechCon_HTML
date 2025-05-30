@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>TechCon 2024 Conference</h1>
+        <h1>Register for TechCon 2024</h1>
 
         <nav>
             <ul>
@@ -20,7 +20,27 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <p>Be part of the future of technology! Join hundreds of developers, innovators, and thought leaders 
+      from around the globe at TechCon 2024. Secure your spot now and get access to exclusive keynotes, 
+      hands-on workshops, and unparalleled networking opportunities.</p>
+
+        <form action="/submit-form" method="post">
+            <label for="full_name">Your Name</label>
+            <input type="text" name="full_name" id="full_name" placeholder="e.g Said Chigamba" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+            <label for="password">Create a password</label>
+            <input type="password" name="password" id="password" minlength="8" placeholder="At least 8 characters" required>
+
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">Terms and conditions</label>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </main>
 
     <footer>
         <p>&copy; Copyright 2024 TechCon Conference</p>
